@@ -23,5 +23,10 @@ Route::get('/contact', 'WelcomeController@contact');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/content', 'HomeController@content');
+//Route::get('/content', 'HomeController@content');
+
+Route::get('/category/add-category', 'CategoryController@index');
+Route::post('/category/new-category', 'CategoryController@saveCategoryInfo');
+
+
 
